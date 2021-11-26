@@ -7,26 +7,58 @@ ul{
     padding: 0;
     overflow: hidden;
     background-color: turquoise;
-    position: fixed;
-    top: 0;
-    width: fit-content;
 }
 
 li {
     float: left;
 }
 
-li a{
+li a, .dropk{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+}
+
+li a:hover, .drp:hover .dropk{
+    background-color: yellowgreen;
+}
+
+li.drp {
+    display: inline-block;
+}
+
+.dropcont{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    background-color: turquoise;
+    z-index: 1;
+}
+
+.dropcont a{
+    padding: 12px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover{
-    background-color: yellowgreen;
-    border: 2px ridge gray;
-    padding: 12px 14px;
+.dropcont a:hover {
+    background-color:yellowgreen;
+    margin: 0px;
+    color: red;
 }
 
+.drp:hover .dropcont{
+    display: block;
+}
+
+@media screen and min-width(1000px){
+    ul{
+        float: left;
+        width: 50px;
+        position: relative;
+    }
+}

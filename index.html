@@ -3,14 +3,19 @@
 <head>
     <title>Exempel 1 navigation bar</title>
     <meta charset = "utf-8" />
-    <link href = "navigation.css" rel="stylesheet" type="text/css" />
+    <link href = "css/navigation.css" rel="stylesheet" type="text/css" />
 </head>
 <header class="mainmenu">
     <ul id="#topnav">
-        <li><a href="home.html">Hem</a></li>
-        <li><a href="news.html">Nyheter</a></li>
-        <li><a href="contacts.html">kontakt</a></li>
-        <li><a href="about.html">Om</a></li>
+        <li><a href="index.html">Hem</a></li>
+        <li class="drp">
+          <a href="javascrip.void" class="dropk">Mer</a>
+          <div class="dropcont">
+            <a href="news.html">Nyheter</a>
+            <a href="contacts.html">Kontakt</a>
+            <a href="about.html">Om</a>
+          </div>
+        </li>
     </ul>
 </header>
 <body>
@@ -59,6 +64,10 @@
         ante elementum tincidunt. Proin tincidunt massa at leo tincidunt consectetur.
         Sed consectetur ornare libero a sagittis. Pellentesque aliquet ipsum ante.
         Sed eget tellus dui, eget sodales lectus.
+      </p>
+      <h2>Mitt tillvägagångssätt</h2>
+      <p>
+        Jag valde att göra en dropdown-meny som innehåller alla länkar förutom "Hem". Detta gjorde jag genom att läsa på <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar">W3schools</a>. Jag läste deras kod och bildade en förståelse för hur den fungerar, med innehållet av menyn med ett display-värde av "none" tills dess att man hovrar över knappen, och hur den sen byter display-värde. jag använde detta för att implementera en dropdown-meny på min sida som jag anpassade själv efter behov.
       </p>
       <div class="push"></div>
     </div><!--rightcol slutar-->
